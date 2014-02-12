@@ -39,7 +39,7 @@
 	  $('#chat-messages').append(escapeDivText(message.text));
 	})
 	socket.on('nicknameChangeResult', function(result) {
-	  if(result.success){
+	  if (result.success){
 	    $('#chat-messages').append(escapeDivText(result.text))
 	  }
 	});

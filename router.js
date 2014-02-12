@@ -22,7 +22,7 @@ var serveError = function(response, errorCode) {
   if (errorCode === 404) {
     message  = 'Error 404: resource not found';
   } else {
-    message = 'Error: there was a problem'
+    message = 'Error: there was a problem';
   }  
   response.writeHead(errorCode, {'Content-Type': 'text/plain'});
   response.write(message);
