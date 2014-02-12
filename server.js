@@ -7,7 +7,7 @@ var httpServer = http.createServer(function (request, response) {
 
 var port = 8080;
 
-httpServer.listen(port);
+httpServer.listen( process.env.PORT || port);
 
 console.log('Server running at http://localhost:' + port + '/');
 
