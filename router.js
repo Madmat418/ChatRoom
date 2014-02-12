@@ -3,7 +3,6 @@ var path = require('path');
 var mime = require('mime');
 
 var serveFile = function(response, absPath){
-  console.log('serving file at ', absPath);
   fs.readFile(absPath, function(err, data) {
     if (err) {
 	  console.log("ERROR LOGGED: ", err);
