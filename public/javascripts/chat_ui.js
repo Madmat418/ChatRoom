@@ -52,5 +52,8 @@
 	  processInput(chatApp);
 	  return false;
 	});
+	$('#draw-card').click(function() {
+	  chatApp.sendMessage(chatApp.game.draw());
+	})
   });
 })(this);

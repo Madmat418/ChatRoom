@@ -3,6 +3,7 @@
   var Chat = ChatApp.Chat = function(socket) {
     this.socket = socket;
 	this.room = 'lobby';
+	this.game = new Poker.Game;
   }
   
   Chat.prototype.sendMessage = function(text) {
