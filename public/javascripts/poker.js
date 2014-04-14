@@ -303,10 +303,8 @@
 	this.game = '';
   }
   
-  Player.prototype.bet(amt) {
-    var toCall = this.game.currentBet - this.currentBet;
-    this.game.currentBet += amt - toCall
-    this.currentBet += amt - toCall;
+  Player.prototype.bet = function(amt) {
+    this.currentBet += amt;
     this.stack -= amt;
 	this.game.pot += amt;
   }
